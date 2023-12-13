@@ -32,3 +32,17 @@ http://localhost:3000
 ``` js
 "start": "nodemon ./bin/www"
 ```
+
+#### install Some package
+
+```sh
+pnpm install sequelize
+```
+
+```sh
+pnpm install pg
+```
+
+```sh
+pnpm i pg-hstore
+```
