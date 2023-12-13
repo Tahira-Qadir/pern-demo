@@ -1,5 +1,5 @@
 const sequelize = require('../common/dbConnection');
-
+const user = require('./schemas/userSchemas')
 
 
 

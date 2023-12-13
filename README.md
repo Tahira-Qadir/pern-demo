@@ -21,9 +21,11 @@ pnpm start
 http://localhost:3000
 
 ### make folder for creating the boilerplate and also file
-- common > dbConnection.js
+- common 
+  - dbConnection.js
 - controller 
-- models > index.js
+- models 
+  - index.js
 - service
 - config.js
 
@@ -46,3 +48,15 @@ pnpm install pg
 ```sh
 pnpm i pg-hstore
 ```
+
+#### Add another folder and files in the previous folder
+
+- controller  
+  - user 
+    - userController.js
+    - userValidation.js
+- models
+  - schemas 
+     - userSchemas.js
+- service
+  - userService.js
