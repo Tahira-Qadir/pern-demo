@@ -1,5 +1,5 @@
-const {models} = require('../../models/index');
-const userValidation = require("./userValidation");
+const userValidation = require('./userValidation');
+const userService = require('../../service/userService')
 
 module.exports = {
   createUser: async (req, res) => {
@@ -8,7 +8,7 @@ module.exports = {
       if (error) {
         console.log(error.details[0].message);
       } else {
-        const data = await models.user.create(value);
+        const data = await userService.createUser(value);
         res.send(data).status(200);
       }
   } catch (error) {
