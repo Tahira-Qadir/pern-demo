@@ -4,7 +4,7 @@ pern-demo
 ### Create Express App 
 
 ``` sh
-express --view=pug pern-demo
+ pnpm install -g express-generator --view=pug pern-demo
 ```
 
 #### Run the development server:
