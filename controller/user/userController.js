@@ -37,4 +37,14 @@ module.exports = {
     }
   },
 
+  deleteUser: async (req, res) => {
+    try { 
+      const Id = req.params.id;
+      const deletedUser = await userService.deleteUser(Id);
+        res.send(deletedUser);
+    } catch (error) {
+        console.log(error)
+    }
+  },
+
 };

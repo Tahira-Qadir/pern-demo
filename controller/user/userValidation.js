@@ -15,4 +15,8 @@ module.exports ={
         email: joi.string().email().required(),
         password: joi.string().required()
     }),
+
+    deleteUser : joi.object().keys({
+        id: joi.string().required(),
+    }),
 }

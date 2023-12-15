@@ -23,7 +23,15 @@ module.exports = {
             return: true,
         });
         return updatedUser;
-    }
+    },
 
+    deleteUser: async (Id) => {
+
+        const deletedUser = await models.user.findByPk(Id);
+        await models.user.destroy({
+            where: {id: Id},
+        });
+        return deletedUser;
+    },
 
 }
