@@ -24,5 +24,17 @@ module.exports = {
     } catch (error) {
         console.log(error)
     }
-  }
+  },
+
+  updateUser: async (req, res) => {
+    try { 
+      const Id = req.params.id;
+      const updatedData =req.body;
+      const updatedUser = await userService.updateUser(Id, updatedData);
+        res.send(updatedUser);
+    } catch (error) {
+        console.log(error)
+    }
+  },
+
 };
