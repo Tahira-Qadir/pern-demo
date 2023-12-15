@@ -9,5 +9,10 @@ module.exports = {
         } catch (error) {
             console.log(error)
         }
+    },
+
+    getUser: async (Id) => {
+        const user = await models.user.findByPk(Id)
+        return user;
     }
 }
