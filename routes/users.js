@@ -4,7 +4,7 @@ var {createUser, getUser, updateUser, deleteUser} = require('../controller/user/
 
 /* GET users listing. */
 router.post('/createUser', createUser);
-router.get('/getUser/:id', getUser);
+router.get('/getUser', getUser);
 router.put('/updateUser/:id', updateUser);
 router.delete('/deleteUser/:id', deleteUser);
 

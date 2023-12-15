@@ -17,6 +17,6 @@ module.exports ={
     }),
 
     deleteUser : joi.object().keys({
-        id: joi.string().required(),
+        id: joi.number().required(),
     }),
 }

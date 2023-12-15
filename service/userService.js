@@ -12,7 +12,7 @@ module.exports = {
     },
 
     getUser: async (Id) => {
-        const user = await models.user.findByPk(Id)
+        const user = await models.user.findAll()
         return user;
     },
 
@@ -28,6 +28,7 @@ module.exports = {
     deleteUser: async (Id) => {
 
         const deletedUser = await models.user.findByPk(Id);
+        console.log(Id)
         await models.user.destroy({
             where: {id: Id},
         });

@@ -19,7 +19,7 @@ module.exports = {
   getUser: async (req, res) => {
     try { 
       const Id = req.params.id;
-        const data = await userService.getUser(Id);
+        const data = await userService.getUser();
         res.send(data);
     } catch (error) {
         console.log(error)
